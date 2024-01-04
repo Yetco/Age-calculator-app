@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="calculator-info">
+          <div class="input-flex">
+            <div class="input-container">
+              <p class="errorD">Day</p>
+              <input type="text" class="input-day" id="inD" placeholder="DD" />
+              <p id="error-day"></p>
+            </div>
+
+            <div class="input-container">
+              <p class="errorM">Month</p>
+              <input
+                type="text"
+                class="input-month"
+                id="inM"
+                placeholder="MM"
+              />
+              <p id="error-month"></p>
+            </div>
+
+            <div class="input-container">
+              <p class="errorY">Year</p>
+              <input
+                type="text"
+                class="input-year"
+                id="inY"
+                placeholder="YYYY"
+              />
+              <p id="error-year"></p>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button class="btn">
+              <img src="assets/images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="dates-info">
+            <div class="dates-input-flex">
+              <p class="purple-number output-year">--</p>
+              <p class="bold-date">years</p>
+            </div>
+            <div class="dates-input-flex">
+              <p class="purple-number output-month">--</p>
+              <p class="bold-date">months</p>
+            </div>
+            <div class="dates-input-flex">
+              <p class="purple-number output-day">--</p>
+              <p class="bold-date">days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ify Nonyelu</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
